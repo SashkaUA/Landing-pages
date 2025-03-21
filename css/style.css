@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s;
+  /* border: 1px solid red; */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  background-color: rgb(24, 24, 24);
+  padding: 20px 20px 20px 50px;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+}
+.top-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.top-menu a {
+  color: white;
+  text-decoration: none;
+}
+.logo_header {
+  width: 85px;
+}
+.btn-menu{
+    position: relative;
+    width: 2rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.btn-menu::before,
+.btn-menu::after{
+    content: '';
+    position: absolute;
+    left: 0;
+}
+.btn-menu::after,
+.btn-menu::before,
+.btn-menu span{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.btn-menu::before{
+    top: 0;
+}
+.btn-menu::after{
+    bottom: 0;
+}
+
+.check-menu{
+    appearance: none;
+    display: none;
+}
+.header {
+  text-align: center;
+  color: white;
+  background-image: url(../img/header_bg.jpg);
+  padding: 150px 0px 200px 0px;
+  background-position: 16% 54%;
+}
+.h1 {
+  font-size: 50px;
+  font-weight: 100px;
+}
+.service {
+  background-color: rgb(233, 233, 233);
+  border-bottom: 1px solid gray;
+  padding: 35px 35px 50px 35px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+}
+.item {
+  max-width: 300px;
+}
+.fa-heart {
+  font-size: 50px;
+}
+.item h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+p {
+  line-height: 1.5;
+}
+.block-abaut {
+  padding: 80px 50px 50px 50px;
+}
+.title {
+  font-family: 300;
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 1px solid rgb(156, 156, 156);
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.about p {
+  max-width: 100%;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 1rem;
+}
+.design {
+  text-align: center;
+  color: white;
+  background-image: url(../img/bg/divider1.jpg);
+  padding: 100px 70px;
+  background-position: 50% 50%;
+}
+.boder-title {
+  border-bottom: 1px solid white;
+}
+.add-magin-top {
+  margin-top: 20px;
+}
+.block_brand {
+  max-width: 600px;
+  margin: auto;
+}
+.add-magin-bottom {
+  margin-bottom: 20px;
+}
+.abaut_img {
+  margin: auto;
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  object-fit: cover;
+  max-width: 100%;
+}
+.design_is {
+  text-align: center;
+  color: white;
+  background-image: url(../img/bg/divider2.jpg);
+  padding: 100px 70px;
+  background-position: 55% 40%;
+}
+.block_team {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.team {
+  margin-top: 40px;
+  text-align: center;
+  width: 260px;
+}
+.links_team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.fa-brands {
+  color: cyan;
+  font-size: 20px;
+}
+
+/* зображення в крулу рамку */
+.round-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.block_WeAre {
+  margin-top: 30px;
+  display: flex;
+}
+.block_WeAre img{
+    object-fit: contain;
+}
+
+.WeAre {
+  text-align: center;
+  padding: 40px 80px;
+}
+
+.WeAre h2 {
+  margin-bottom: 20px;
+}
+
+.button_contact {
+  margin: auto;
+  color: white;
+  background-color: greenyellow;
+  width: 100px;
+  height: 40px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.button_contact:hover{
+    box-shadow: 0 0 0 2px greenyellow;
+}
+
+.desing_solve {
+  text-align: center;
+  color: white;
+  background-image: url(../img/bg/divider3.jpg);
+  padding: 100px 70px;
+  background-position: 55% 40%;
+}
+
+.block_WeCreate {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.img_WeCreate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 50px;
+}
+.img_WeCreate img {
+  max-width: 300px;
+  object-fit: cover;
+}
+.design_creates {
+  text-align: center;
+  color: white;
+  background-image: url(../img/bg/divider4.jpg);
+  padding: 100px 30px;
+  background-position: 55% 40%;
+}
+
+
+@media (max-width: 1024px){
+    .block_team{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .block_WeAre{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px){
+    .menu{
+        justify-content: space-between;
+        z-index: 300;
+    }
+    .top-menu{
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: -5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+        background-color: rgb(24, 24, 24);
+    }
+    .btn-menu{
+        display: flex;
+        cursor: pointer;
+        z-index: 400;
+    }
+    .check-menu:checked ~ .top-menu{
+        z-index: 100;
+        top: 5rem;
+    }
+    .about{
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 425px){
+    .service{
+        flex-wrap: wrap;
+    }
+}
